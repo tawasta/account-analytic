@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="supplier_invoice_form" model="ir.ui.view">
+        <field name="name">account.vendor.invoice.update.line.analytic.tags.invoice.form</field>
+        <field name="model">account.invoice</field>
+        <field name="inherit_id" ref="account.invoice_supplier_form"/>
+        <field name="arch" type="xml">
+            <field name="date_due" position="after">
+                <field name="analytic_tag_ids" widget="many2many_tags" options="{ 'no_create': 1 }"/>
+                <label string=" " for="set_line_analytic_tags"/>
+                <button name="set_line_analytic_tags"
+                      type="object"
+                      string="Set tags for invoice lines"
+                      class="oe_edit_only oe_right oe_link"
+                      attrs="{ 'invisible': [('state', 'not in', ['draft'])] }"/>                
+            </field>
+        </field>
+    </record>
+</odoo>
