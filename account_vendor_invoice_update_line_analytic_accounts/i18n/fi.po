@@ -1,0 +1,42 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* account_vendor_invoice_update_line_analytic_accounts
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-06-29 11:05+0000\n"
+"PO-Revision-Date: 2018-06-29 11:05+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: account_vendor_invoice_update_line_analytic_accounts
+#: model:ir.model.fields,field_description:account_vendor_invoice_update_line_analytic_accounts.field_account_invoice_analytic_account_id
+msgid "Default Analytic Account"
+msgstr "Oletuskustannuspaikka"
+
+#. module: account_vendor_invoice_update_line_analytic_accounts
+#: model:ir.model.fields,help:account_vendor_invoice_update_line_analytic_accounts.field_account_invoice_analytic_account_id
+msgid "Informational analytic account related to the invoice"
+msgstr "Laskua koskeva kustannuspaikka"
+
+#. module: account_vendor_invoice_update_line_analytic_accounts
+#: model:ir.model,name:account_vendor_invoice_update_line_analytic_accounts.model_account_invoice
+msgid "Invoice"
+msgstr "Lasku"
+
+#. module: account_vendor_invoice_update_line_analytic_accounts
+#: code:addons/account_vendor_invoice_update_line_analytic_accounts/models/account_invoice.py:20
+#, python-format
+msgid "Please select a default analytic account first"
+msgstr "Ole hyvä ja valitse ensin oletuskustannuspaikka"
+
+#. module: account_vendor_invoice_update_line_analytic_accounts
+#: model:ir.ui.view,arch_db:account_vendor_invoice_update_line_analytic_accounts.account_invoice_view_form
+msgid "Set accounts for invoice lines"
+msgstr "Aseta kustannuspaikka laskuriveille"
