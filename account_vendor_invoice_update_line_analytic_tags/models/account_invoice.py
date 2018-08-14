@@ -11,9 +11,11 @@ class AccountInvoice(models.Model):
         string='Default Analytic Tags',
         readonly=True,
         states={'draft': [('readonly', False)]},
-        help=('Informational list of analytic tags related to the invoice')
+        help=_('Informational list of analytic tags related to the invoice')
     )
 
+    @api.multi
+    @api.onchange('analytic_tag_ids')
     def set_line_analytic_tags(self):
         self.ensure_one()
         if not self.analytic_tag_ids:
