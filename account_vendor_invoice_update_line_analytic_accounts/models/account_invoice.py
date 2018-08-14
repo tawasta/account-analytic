@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from odoo import fields, models, exceptions, _
+from odoo import fields, models, exceptions, _, api
 
 
 class AccountInvoice(models.Model):
@@ -11,9 +11,11 @@ class AccountInvoice(models.Model):
         string='Default Analytic Account',
         readonly=True,
         states={'draft': [('readonly', False)]},
-        help=('Informational analytic account related to the invoice')
+        help=_('Informational analytic account related to the invoice')
     )
 
+    @api.multi
+    @api.onchange('analytic_account_id')
     def set_line_analytic_accounts(self):
         self.ensure_one()
         if not self.analytic_account_id:
