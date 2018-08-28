@@ -15,8 +15,9 @@ Configuration
 
 Usage
 =====
-* Open a draft supplier invoice and select some default analytic tags
-* Click "Set tags for invoice lines"
+* Open a draft supplier invoice with some lines
+* Set the default analytic tags
+
 
 Known issues / Roadmap
 ======================

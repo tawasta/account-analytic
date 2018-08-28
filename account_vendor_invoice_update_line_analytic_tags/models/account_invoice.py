@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from odoo import api, fields, models, exceptions, _
+from odoo import api, fields, models, _
 
 
 class AccountInvoice(models.Model):
@@ -18,10 +18,7 @@ class AccountInvoice(models.Model):
     @api.onchange('analytic_tag_ids')
     def set_line_analytic_tags(self):
         self.ensure_one()
-        if not self.analytic_tag_ids:
-            error = _('Please select some default analytic tags first')
-            raise exceptions.UserError(error)
-
-        for line in self.invoice_line_ids:
-            line.analytic_tag_ids \
-                = [(6, 0, self.analytic_tag_ids.mapped('id'))]
+        if self.analytic_tag_ids:
+            for line in self.invoice_line_ids:
+                line.analytic_tag_ids \
+                    = [(6, 0, self.analytic_tag_ids.mapped('id'))]
