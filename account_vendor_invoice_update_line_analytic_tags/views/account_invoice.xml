@@ -4,6 +4,7 @@
         <field name="name">account.vendor.invoice.update.line.analytic.tags.invoice.form</field>
         <field name="model">account.invoice</field>
         <field name="inherit_id" ref="account.invoice_supplier_form"/>
+        <field name="priority" eval="15"/>
         <field name="arch" type="xml">
             <field name="date_due" position="after">
                 <field name="analytic_tag_ids" widget="many2many_tags" options="{ 'no_create': 1 }"/>
