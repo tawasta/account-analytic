@@ -8,6 +8,10 @@ Supplier invoice line analytic account update
 
 * Enables mass updating the analytic account for all the lines belonging to a 
   supplier invoice
+* Additionally, if also account_vendor_invoice_update_line_analytic_tags module
+  is installed, then also the Default Analytic Tags field gets updated,
+  consequently triggering also the update of analytic tags on supplier invoice
+  lines in one go.
 
 Configuration
 =============
@@ -15,8 +19,9 @@ Configuration
 
 Usage
 =====
-* Open a draft supplier invoice and select a default analytic account
-* Click "Set account for invoice lines"
+* Open a draft supplier invoice with invoice lines
+* Select a default analytic account
+
 
 Known issues / Roadmap
 ======================
