@@ -9,7 +9,6 @@ class AccountInvoice(models.Model):
     analytic_account_id = fields.Many2one(
         comodel_name='account.analytic.account',
         string='Default Analytic Account',
-        required=True,
         states={'draft': [('readonly', False)]},
         help=_('Informational analytic account related to the invoice')
     )
