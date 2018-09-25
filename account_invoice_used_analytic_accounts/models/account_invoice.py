@@ -19,6 +19,7 @@ class AccountInvoice(models.Model):
         column1='invoice_id',
         column2='analytic_account_id',
         string="Lines' analytic accounts",
+        domain=['|', ('active', '=', False), ('active', '=', True)],
         store=True,
         help='List of analytic accounts used in the invoice rows'
     )
