@@ -6,7 +6,7 @@
 Supplier invoice analytic account to comment
 ============================================
 
-Append analytic account to invoice comment on validate"
+Append analytic account to invoice comment on validate
 
 Configuration
 =============
