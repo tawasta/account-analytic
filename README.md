@@ -17,6 +17,7 @@ addon | version | summary
 [account_invoice_project_analytic_tags](account_invoice_project_analytic_tags/) | 10.0.1.1.0 | Adds invoice line analytic tags from analytic account
 [account_invoice_used_analytic_accounts](account_invoice_used_analytic_accounts/) | 10.0.1.1.0 | Enables filtering invoices based on lines' analytic accounts
 [account_invoice_used_analytic_tags](account_invoice_used_analytic_tags/) | 10.0.1.1.0 | Enables filtering invoices based on lines' analytic tags
+[account_vendor_invoice_analytic_account_to_comment](account_vendor_invoice_analytic_account_to_comment/) | 10.0.1.0.0 | Append analytic account to invoice comment on validate
 [account_vendor_invoice_update_line_analytic_accounts](account_vendor_invoice_update_line_analytic_accounts/) | 10.0.1.3.0 | Mass update all lines' analytic account of a single invoice
 [account_vendor_invoice_update_line_analytic_tags](account_vendor_invoice_update_line_analytic_tags/) | 10.0.1.1.2 | Mass update all lines' analytic tags of a single invoice
 [company_analytic_tags](company_analytic_tags/) | 10.0.1.0.0 | Analytic tags for companies
