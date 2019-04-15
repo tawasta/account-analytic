@@ -22,7 +22,7 @@
 {
     'name': 'Allow disabling analytic tags',
     'summary': 'Adds "active" attribute for analytic tags',
-    'version': '10.0.1.0.0',
+    'version': '1.0.0',
     'category': 'Invoicing',
     'website': 'http://www.tawasta.fi',
     'author': 'Oy Tawasta Technologies Ltd.',

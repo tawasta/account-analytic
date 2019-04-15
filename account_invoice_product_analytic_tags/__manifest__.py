@@ -22,7 +22,7 @@
 {
     'name': 'Product analytic tags on invoice lines',
     'summary': 'Adds invoice line analytic tags from products',
-    'version': '10.0.1.1.0',
+    'version': '1.1.0',
     'category': 'Invoicing',
     'website': 'http://www.tawasta.fi',
     'author': 'Oy Tawasta Technologies Ltd.',

@@ -22,7 +22,7 @@
 {
     'name': 'Analytic tags for companies',
     'summary': 'Analytic tags for companies',
-    'version': '10.0.1.0.0',
+    'version': '1.0.0',
     'category': 'Accounting & Finance',
     'website': 'http://www.tawasta.fi',
     'author': 'Oy Tawasta Technologies Ltd.',

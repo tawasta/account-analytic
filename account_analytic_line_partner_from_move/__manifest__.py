@@ -22,7 +22,7 @@
 {
     'name': 'Move-based partner field for analytic lines',
     'summary': "Show the related account move's partner for analytic lines",
-    'version': '10.0.1.0.0',
+    'version': '1.0.0',
     'category': 'Accounting & Finance',
     'website': 'http://www.tawasta.fi',
     'author': 'Oy Tawasta Technologies Ltd.',
