@@ -1,8 +1,8 @@
-# -*- coding: utf-8 -*-
+
 ##############################################################################
 #
 #    Author: Oy Tawasta OS Technologies Ltd.
-#    Copyright 2018 Oy Tawasta OS Technologies Ltd. (http://www.tawasta.fi)
+#    Copyright 2018 Oy Tawasta OS Technologies Ltd. (https://tawasta.fi)
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as
@@ -22,9 +22,9 @@
 {
     'name': 'Supplier invoice line analytic tag update',
     'summary': "Mass update all lines' analytic tags of a single invoice",
-    'version': '1.1.2',
+    'version': '12.0.1.1.2',
     'category': 'Invoicing',
-    'website': 'http://www.tawasta.fi',
+    'website': 'https://github.com/Tawasta/account-analytic',
     'author': 'Oy Tawasta Technologies Ltd.',
     'license': 'AGPL-3',
     'application': False,
