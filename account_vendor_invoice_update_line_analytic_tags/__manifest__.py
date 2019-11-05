@@ -22,7 +22,7 @@
 {
     'name': 'Supplier invoice line analytic tag update',
     'summary': "Mass update all lines' analytic tags of a single invoice",
-    'version': '10.0.1.1.2',
+    'version': '1.1.2',
     'category': 'Invoicing',
     'website': 'http://www.tawasta.fi',
     'author': 'Oy Tawasta Technologies Ltd.',
