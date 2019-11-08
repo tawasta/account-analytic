@@ -22,7 +22,7 @@
 {
     'name': 'Analytic Account for Customer Invoice header',
     'summary': 'Analytic Account for Customer Invoice header',
-    'version': '10.0.0.1.0',
+    'version': '10.0.1.0.0',
     'category': 'Accounting & Finance',
     'website': 'https://tawasta.fi',
     'author': 'Oy Tawasta Technologies Ltd.',
