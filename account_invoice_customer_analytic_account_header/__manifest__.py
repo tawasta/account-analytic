@@ -31,6 +31,7 @@
     'installable': True,
     'depends': [
         'account',
+        'account_vendor_invoice_update_line_analytic_accounts',
     ],
     'data': [
         'views/account_invoice.xml',
