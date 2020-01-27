@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="ir_cron_scheduler_bank_statement_merge" model="ir.cron">
+        <field name="name">Merge bank statements</field>
+        <field name="user_id" ref="base.user_root"/>
+        <field name="interval_number">1</field>
+        <field name="interval_type">hours</field>
+        <field name="numbercall">-1</field>
+        <field name="doall" eval="False"/>
+        <field name="model">account.bank.statement</field>
+        <field name="function">action_merge_statements</field>
+        <field name="args">()</field>
+        <field name="active" eval="True"/>
+    </record>
+</odoo>
