@@ -22,7 +22,7 @@
 {
     'name': 'Merge bank statements',
     'summary': 'Allow merging bank statements',
-    'version': '10.0.1.0.0',
+    'version': '10.0.1.1.0',
     'category': 'Invoicing',
     'website': 'https://tawasta.fi',
     'author': 'Tawasta',

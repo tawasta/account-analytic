@@ -35,6 +35,7 @@ class AccountBankStatement(models.Model):
 
             line_to = statement_to.line_ids.filtered(
                 lambda r: round(r.amount, 2) == round(statement.balance_end, 2)
+                and not r.partner_name
             )
 
             merged_keys.append(key)
