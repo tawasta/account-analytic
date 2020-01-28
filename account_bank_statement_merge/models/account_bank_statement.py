@@ -40,6 +40,10 @@ class AccountBankStatement(models.Model):
 
             merged_keys.append(key)
 
+            if len(line_to) > 1:
+                # Multiple matching lines found. Skip this for now
+                continue
+            
             # Matching statement line found
             if line_to:
                 # Remove the statement sum line
