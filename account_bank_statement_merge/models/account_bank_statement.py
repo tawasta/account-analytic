@@ -48,6 +48,9 @@ class AccountBankStatement(models.Model):
             if line_to:
                 # Remove the statement sum line
                 line_to.unlink()
+            else:
+                # Don't move lines if no sum line is found
+                continue
 
             # Move lines to new statement
             statement.line_ids.write({'statement_id': statement_to.id})
