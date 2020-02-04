@@ -38,14 +38,13 @@ class AccountBankStatement(models.Model):
                 and not r.partner_name
             )
 
-            merged_keys.append(key)
-
             if len(line_to) > 1:
                 # Multiple matching lines found. Skip this for now
                 continue
             
             # Matching statement line found
             if line_to:
+                merged_keys.append(key)
                 # Remove the statement sum line
                 line_to.unlink()
             else:
