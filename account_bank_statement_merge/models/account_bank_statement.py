@@ -49,10 +49,13 @@ class AccountBankStatement(models.Model):
             if line_to:
                 # Matching statement line found
                 # Remove the statement sum line
-                line_content = "{date}: {name}/{amount}".format(
+                line_content = "{date} {name} {amount} / {ref}".format(
                     date=line_to.date,
-                    name=line_to.name,
+                    name=line_to.name
+                         and line_to.name.encode('ascii', 'replace'),
                     amount=line_to.amount,
+                    ref=line_to.ref
+                        and line_to.ref.encode('ascii', 'replace') or '',
                 )
 
                 line_msg = _("Statement line '{}' removed".format(line_content))
@@ -66,10 +69,13 @@ class AccountBankStatement(models.Model):
 
             # Move lines to new statement
             for line in statement_from.line_ids:
-                line_content = "{date}: {name}/{amount}".format(
+                line_content = "{date} {name} {amount} / {ref} {partner}".format(
                     date=line.date,
-                    name=line.name,
+                    name=line.name.encode('ascii', 'replace'),
                     amount=line.amount,
+                    ref=line.ref and line.ref.encode('ascii', 'replace') or '',
+                    partner=line.partner_id and line.partner_id.name.encode(
+                        'ascii', 'replace') or '',
                 )
 
                 line.statement_id = statement_to.id
