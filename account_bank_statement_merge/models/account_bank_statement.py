@@ -67,13 +67,12 @@ class AccountBankStatement(models.Model):
 
             # Move lines to new statement
             for line in statement_from.line_ids:
-                line_content = "{date} {name} {amount} / {ref} {partner}"\
+                line_content = "{date} {name} {amount} / {ref}"\
                     .format(
                         date=line.date,
                         name=line.name,
                         amount=line.amount,
                         ref=line.ref or '',
-                        partner=line.partner_id.name or '',
                     )
 
                 line.statement_id = statement_to.id
