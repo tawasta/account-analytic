@@ -22,7 +22,7 @@
 {
     'name': 'Merge bank statements',
     'summary': 'Allow merging bank statements',
-    'version': '10.0.1.1.1',
+    'version': '10.0.1.2.0',
     'category': 'Invoicing',
     'website': 'https://tawasta.fi',
     'author': 'Tawasta',
@@ -38,6 +38,7 @@
     ],
     'data': [
         'data/ir_cron.xml',
+        'views/account_bank_statement.xml',
     ],
     'demo': [
     ],
