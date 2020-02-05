@@ -62,7 +62,7 @@ class AccountBankStatement(models.Model):
                 line_to.unlink()
             else:
                 # Don't move lines if no sum line is found
-                line_msg = _("Warning! No matching statement line was found!")
+                continue
 
             # Mark this statement as merged
             merged_keys.append(key)
