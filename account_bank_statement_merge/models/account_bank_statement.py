@@ -14,7 +14,9 @@ class AccountBankStatement(models.Model):
         # Search all open bank statements
         statements = self.search([
             ('state', '=', 'open'),
-        ], order='total_entry_encoding ASC')
+            ('name', 'ilike', 'CAMT54'),
+            ('name', 'ilike', 'CAMT054'),            
+        ], limit=50)
 
         merged_keys = []
 
@@ -28,7 +30,9 @@ class AccountBankStatement(models.Model):
                 ('journal_id', '=', statement_from.journal_id.id),
                 ('date', '=', statement_from.date),
                 ('id', '!=', statement_from.id),
-                ('total_entry_encoding', '>', statement_from.total_entry_encoding)
+                '|',
+                ('name', 'ilike', 'CAMT53'),
+                ('name', 'ilike', 'CAMT053'),
             ], limit=1)
 
             if not statement_to:
@@ -61,8 +65,8 @@ class AccountBankStatement(models.Model):
                 line_msg = _("Statement line '{}' removed".format(line_content))
                 line_to.unlink()
             else:
-                # Don't move lines if no sum line is found
-                continue
+                # Post warning if sum lines are not found
+                line_msg = _("Warning! No matching statement line was found!")
 
             # Mark this statement as merged
             merged_keys.append(key)
