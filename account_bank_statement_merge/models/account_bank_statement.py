@@ -14,6 +14,7 @@ class AccountBankStatement(models.Model):
         # Search all open bank statements
         statements = self.search([
             ('state', '=', 'open'),
+            '|',
             ('name', 'ilike', 'CAMT54'),
             ('name', 'ilike', 'CAMT054'),            
         ], limit=50)
