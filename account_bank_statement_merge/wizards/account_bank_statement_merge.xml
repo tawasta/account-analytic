@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <record id="action_bank_statement_merge_wizard" model="ir.ui.view">
+        <field name="model">account.bank.statement.merge</field>
+        <field name="arch" type="xml">
+            <form string="Merge statements">
+                <p>The selected statements will be merged.</p>
+                <p>Bank reference notifications (CAMT054) will be merged into bank statement (CAMT053)</p>
+                <footer>
+                    <button string="Confirm" 
+                        type="object" 
+                        class="oe_highlight"
+                        name="confirm"/>
+                    or
+                    <button string="Cancel" 
+                        class="oe_link"
+                        special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <act_window id="action_bank_statement_merge"
+            multi="True"
+            key2="client_action_multi" name="Merge statements"
+            res_model="account.bank.statement.merge" src_model="account.bank.statement"
+            view_mode="form" target="new" view_type="form" 
+            groups="account.group_account_user"/>
+
+</odoo>
