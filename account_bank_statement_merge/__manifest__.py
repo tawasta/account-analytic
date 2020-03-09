@@ -39,6 +39,7 @@
     'data': [
         'data/ir_cron.xml',
         'views/account_bank_statement.xml',
+        'wizards/account_bank_statement_merge.xml',
     ],
     'demo': [
     ],
