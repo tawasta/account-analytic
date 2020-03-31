@@ -22,10 +22,10 @@
 {
     'name': 'Supplier invoice line analytic account update',
     'summary': "Mass update all lines' analytic account of a single invoice",
-    'version': '1.3.0',
+    'version': '12.0.1.3.1',
     'category': 'Invoicing',
-    'website': 'http://www.tawasta.fi',
-    'author': 'Oy Tawasta Technologies Ltd.',
+    'website': 'http://tawasta.fi',
+    'author': 'Tawasta',
     'license': 'AGPL-3',
     'application': False,
     'installable': False,
