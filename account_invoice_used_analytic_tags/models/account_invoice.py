@@ -19,7 +19,6 @@ class AccountInvoice(models.Model):
         column1="invoice_id",
         column2="analytic_tag_id",
         string="Lines' analytic tags",
-        domain=["|", ("active", "=", False), ("active", "=", True)],
         store=True,
         help="List of analytic tags used in the invoice rows",
     )
