@@ -10,7 +10,6 @@ Adds invoice line analytic tags from products
 
 Configuration
 =============
-
 \-
 
 Usage
