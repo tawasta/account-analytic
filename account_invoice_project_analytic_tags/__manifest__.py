@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 ##############################################################################
 #
 #    Author: Oy Tawasta OS Technologies Ltd.
@@ -20,26 +19,17 @@
 ##############################################################################
 
 {
-    'name': 'Analytic account analytic tags on invoice lines',
-    'summary': 'Adds invoice line analytic tags from analytic account',
-    'version': '1.1.0',
-    'category': 'Invoicing',
-    'website': 'http://www.tawasta.fi',
-    'author': 'Oy Tawasta Technologies Ltd.',
-    'license': 'AGPL-3',
-    'application': False,
-    'installable': False,
-    'external_dependencies': {
-        'python': [],
-        'bin': [],
-    },
-    'depends': [
-        'account',
-        'analytic',
-    ],
-    'data': [
-
-    ],
-    'demo': [
-    ],
+    "name": "Analytic account analytic tags on invoice lines",
+    "summary": "Adds invoice line analytic tags from analytic account",
+    "version": "12.0.1.1.0",
+    "category": "Invoicing",
+    "website": "http://www.tawasta.fi",
+    "author": "Tawasta",
+    "license": "AGPL-3",
+    "application": False,
+    "installable": True,
+    "external_dependencies": {"python": [], "bin": [],},
+    "depends": ["account", "analytic",],
+    "data": [],
+    "demo": [],
 }
