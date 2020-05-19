@@ -139,7 +139,7 @@ class AccountInvoice(models.Model):
                     (0, 0, value) for value in
                     invoice_data['invoice_line_ids'].values()]
 
-            print(invoice_data['invoice_line_ids'])
+            # print(invoice_data['invoice_line_ids'])
 
             if date_invoice:
                 invoice_data['date_invoice'] = date_invoice
