@@ -1,4 +1,3 @@
-
 ##############################################################################
 #
 #    Author: Oy Tawasta OS Technologies Ltd.
@@ -22,13 +21,13 @@
 {
     'name': 'Product template tag analytic tags on invoice lines',
     'summary': 'Adds invoice line analytic tags from products tags',
-    'version': '12.0.1.1.0',
+    'version': '12.0.1.0.0',
     'category': 'Invoicing',
-    'website': 'https://github.com/Tawasta/account-analytic',
-    'author': 'Oy Tawasta Technologies Ltd.',
+    'website': 'http://www.tawasta.fi',
+    'author': 'Tawasta',
     'license': 'AGPL-3',
     'application': False,
-    'installable': False,
+    'installable': True,
     'external_dependencies': {
         'python': [],
         'bin': [],
