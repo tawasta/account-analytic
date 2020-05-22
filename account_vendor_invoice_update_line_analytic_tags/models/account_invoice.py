@@ -10,7 +10,7 @@ class AccountInvoice(models.Model):
         string="Default Analytic Tags",
         readonly=True,
         states={"draft": [("readonly", False)]},
-        help=_("Informational list of analytic tags related to the invoice"),
+        help="Informational list of analytic tags related to the invoice",
     )
 
     @api.multi
