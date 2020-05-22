@@ -28,8 +28,8 @@
     "license": "AGPL-3",
     "application": False,
     "installable": True,
-    "external_dependencies": {"python": [], "bin": [],},
-    "depends": ["account",],
-    "data": ["views/account_invoice.xml",],
+    "external_dependencies": {"python": [], "bin": []},
+    "depends": ["account"],
+    "data": ["views/account_invoice.xml"],
     "demo": [],
 }
