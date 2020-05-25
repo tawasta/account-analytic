@@ -1,5 +1,5 @@
 
-from odoo import fields, models, _, api
+from odoo import api, fields, models, _
 
 
 class AccountInvoice(models.Model):
