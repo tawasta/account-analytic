@@ -20,8 +20,8 @@
 
 {
     "name": "Supplier invoice line analytic account update",
-    "summary": """Mass update all lines" analytic account of a single invoice""",
-    "version": "12.0.1.3.1",
+    "summary": "Mass update all lines analytic account of a single invoice",
+    "version": "12.0.1.3.2",
     "category": "Invoicing",
     "website": "http://tawasta.fi",
     "author": "Tawasta",
@@ -29,9 +29,9 @@
     "application": False,
     "installable": True,
     "depends": [
-        "account",
+        "account_invoice_analytic_account",
+        "account_analytic_account_tags",
     ],
     "data": [
-        "views/account_invoice.xml",
     ],
 }

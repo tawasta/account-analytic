@@ -1,7 +1,7 @@
 ##############################################################################
 #
 #    Author: Oy Tawasta OS Technologies Ltd.
-#    Copyright 2018 Oy Tawasta OS Technologies Ltd. (https://tawasta.fi)
+#    Copyright 2020 Oy Tawasta OS Technologies Ltd. (https://tawasta.fi)
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as
@@ -19,17 +19,25 @@
 ##############################################################################
 
 {
-    "name": "Supplier invoice analytic account to comment",
-    "summary": "Append analytic account to invoice comment on validate",
-    "version": "12.0.1.0.0",
-    "category": "Invoicing",
-    "website": "https://github.com/Tawasta/account-analytic",
-    "author": "Tawasta",
-    "license": "AGPL-3",
-    "application": False,
-    "installable": True,
-    "external_dependencies": {"python": [], "bin": []},
-    "depends": ["account_vendor_invoice_update_line_analytic_accounts"],
-    "data": [],
-    "demo": [],
+    'name': 'Analytic account tags',
+    'summary': 'Adds analytic tags to analytic account',
+    'version': '12.0.1.0.0',
+    'category': 'Invoicing',
+    'website': 'https://github.com/Tawasta/account-analytic',
+    'author': 'Tawasta',
+    'license': 'AGPL-3',
+    'application': False,
+    'installable': True,
+    'external_dependencies': {
+        'python': [],
+        'bin': [],
+    },
+    'depends': [
+        'analytic',
+    ],
+    'data': [
+        'views/account_analytic_account.xml',
+    ],
+    'demo': [
+    ],
 }

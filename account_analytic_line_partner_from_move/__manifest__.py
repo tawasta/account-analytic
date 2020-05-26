@@ -28,8 +28,8 @@
     "license": "AGPL-3",
     "application": False,
     "installable": True,
-    "external_dependencies": {"python": [], "bin": [],},
-    "depends": ["analytic", "account",],
-    "data": ["views/account_analytic_line.xml",],
+    "external_dependencies": {"python": [], "bin": []},
+    "depends": ["analytic", "account"],
+    "data": ["views/account_analytic_line.xml"],
     "demo": [],
 }
