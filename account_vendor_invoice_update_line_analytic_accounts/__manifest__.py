@@ -33,6 +33,5 @@
         "account_analytic_account_tags",
     ],
     "data": [
-        "views/account_invoice.xml",
     ],
 }
