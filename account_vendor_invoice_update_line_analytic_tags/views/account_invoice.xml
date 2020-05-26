@@ -7,7 +7,7 @@
         <field name="priority" eval="15"/>
         <field name="arch" type="xml">
             <field name="date_due" position="after">
-                <field name="analytic_tag_ids" widget="many2many_tags" options="{ 'no_create': 1 }"/>
+                <field name="analytic_tag_ids" widget="many2many_tags" options="{ 'no_create': 1, 'color_field': 'color' }" />
             </field>
         </field>
     </record>

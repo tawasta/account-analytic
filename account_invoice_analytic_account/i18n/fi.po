@@ -1,0 +1,34 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* account_invoice_analytic_account
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-05-26 11:45+0000\n"
+"PO-Revision-Date: 2020-05-26 11:45+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: account_invoice_analytic_account
+#: model:ir.model.fields,field_description:account_invoice_analytic_account.field_account_invoice__analytic_account_id
+#: model:ir.model.fields,field_description:account_invoice_analytic_account.field_procountor_account_invoice__analytic_account_id
+msgid "Default Analytic Account"
+msgstr "Oletuskustannuspaikka"
+
+#. module: account_invoice_analytic_account
+#: model:ir.model.fields,help:account_invoice_analytic_account.field_account_invoice__analytic_account_id
+#: model:ir.model.fields,help:account_invoice_analytic_account.field_procountor_account_invoice__analytic_account_id
+msgid "Informational analytic account related to the invoice"
+msgstr "Laskua koskeva kustannuspaikka"
+
+#. module: account_invoice_analytic_account
+#: model:ir.model,name:account_invoice_analytic_account.model_account_invoice
+msgid "Invoice"
+msgstr "Lasku"
+
