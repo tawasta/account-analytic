@@ -1,4 +1,3 @@
-
 ##############################################################################
 #
 #    Author: Oy Tawasta OS Technologies Ltd.
@@ -20,25 +19,17 @@
 ##############################################################################
 
 {
-    'name': 'Move-based partner field for analytic lines',
-    'summary': "Show the related account move's partner for analytic lines",
-    'version': '12.0.1.0.0',
-    'category': 'Accounting & Finance',
-    'website': 'https://github.com/Tawasta/account-analytic',
-    'author': 'Tawasta',
-    'license': 'AGPL-3',
-    'application': False,
-    'installable': True,
-    'external_dependencies': {
-        'python': [],
-        'bin': [],
-    },
-    'depends': [
-        'analytic',
-    ],
-    'data': [
-        'views/account_analytic_line.xml',
-    ],
-    'demo': [
-    ],
+    "name": "Move-based partner field for analytic lines",
+    "summary": "Show the related account move's partner for analytic lines",
+    "version": "12.0.1.0.0",
+    "category": "Accounting & Finance",
+    "website": "https://github.com/Tawasta/account-analytic",
+    "author": "Tawasta",
+    "license": "AGPL-3",
+    "application": False,
+    "installable": True,
+    "external_dependencies": {"python": [], "bin": [],},
+    "depends": ["analytic", "account",],
+    "data": ["views/account_analytic_line.xml",],
+    "demo": [],
 }
