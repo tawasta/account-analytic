@@ -1,4 +1,3 @@
-
 ##############################################################################
 #
 #    Author: Oy Tawasta OS Technologies Ltd.
@@ -20,24 +19,15 @@
 ##############################################################################
 
 {
-    'name': "Lines' analytic accounts for invoices",
-    'summary': "Enables filtering invoices based on lines' analytic accounts",
-    'version': '12.0.1.1.0',
-    'category': 'Invoicing',
-    'website': 'https://github.com/Tawasta/account-analytic',
-    'author': 'Oy Tawasta Technologies Ltd.',
-    'license': 'AGPL-3',
-    'application': False,
-    'installable': False,
-    'external_dependencies': {
-        'python': [],
-        'bin': [],
-    },
-    'depends': [
-        'account',
-    ],
-    'data': [
-    ],
-    'demo': [
-    ],
+    "name": "Lines' analytic accounts for invoices",
+    "summary": "Enables filtering invoices based on lines' analytic accounts",
+    "version": "12.0.1.1.1",
+    "category": "Invoicing",
+    "website": "https://github.com/Tawasta/account-analytic",
+    "author": "Tawasta",
+    "license": "AGPL-3",
+    "application": False,
+    "installable": True,
+    "depends": ["account"],
+    "data": [],
 }
