@@ -22,7 +22,7 @@
 {
     'name': "Analytic line parent project",
     'summary': "Analytic line parent project",
-    'version': '10.0.1.0.0',
+    'version': '10.0.1.0.1',
     'category': 'Accounting & Finance',
     'website': 'https://github.com/Tawasta/account-analytic',
     'author': 'Tawasta',
@@ -34,7 +34,7 @@
         'bin': [],
     },
     'depends': [
-        'analytic',
+        'analytic', 'hr_timesheet',
     ],
     'data': [
     ],
