@@ -1,4 +1,3 @@
-
 ##############################################################################
 #
 #    Author: Oy Tawasta OS Technologies Ltd.
@@ -20,25 +19,17 @@
 ##############################################################################
 
 {
-    'name': 'Analytic Account - No partner in name',
-    'summary': 'Removes partner name from name_get',
-    'version': '12.0.1.0.0',
-    'category': 'Accounting & Finance',
-    'website': 'https://github.com/Tawasta/account-analytic',
-    'author': 'Oy Tawasta Technologies Ltd.',
-    'license': 'AGPL-3',
-    'application': False,
-    'installable': False,
-    'external_dependencies': {
-        'python': [],
-        'bin': [],
-    },
-    'depends': [
-        'analytic',
-    ],
-    'data': [
-
-    ],
-    'demo': [
-    ],
+    "name": "Analytic Account - No partner in name",
+    "summary": "Removes partner name from name_get",
+    "version": "12.0.1.0.0",
+    "category": "Accounting & Finance",
+    "website": "https://github.com/Tawasta/account-analytic",
+    "author": "Tawasta",
+    "license": "AGPL-3",
+    "application": False,
+    "installable": True,
+    "external_dependencies": {"python": [], "bin": []},
+    "depends": ["analytic"],
+    "data": [],
+    "demo": [],
 }
