@@ -6,7 +6,7 @@
 Analytic account tags
 =====================
 
-Adds analytic tags to analytic account
+* Adds analytic tags to analytic account
 
 Configuration
 =============
