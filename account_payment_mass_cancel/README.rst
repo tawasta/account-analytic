@@ -2,20 +2,19 @@
    :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
    :alt: License: AGPL-3
 
-=====================
-Analytic account tags
-=====================
+===========================
+Account Payment mass cancel
+===========================
 
-* Adds analytic tags to analytic account
+* Adds a button to Payments which is used to cancel multiple payments
 
 Configuration
 =============
-
 \-
 
 Usage
 =====
-\-
+* Go to Apps to install this module
 
 Known issues / Roadmap
 ======================
@@ -26,13 +25,14 @@ Credits
 
 Contributors
 ------------
-* Jarmo Kortetjärvi <jarmo.kortetjarvi@tawasta.fi>
+
+* Timo Kekäläinen <timo.kekalainen@tawasta.fi>
 
 Maintainer
 ----------
 
-.. image:: https://tawasta.fi/templates/tawastrap/images/logo.png
+.. image:: http://tawasta.fi/templates/tawastrap/images/logo.png
    :alt: Oy Tawasta OS Technologies Ltd.
-   :target: https://tawasta.fi/
+   :target: http://tawasta.fi/
 
 This module is maintained by Oy Tawasta OS Technologies Ltd.
