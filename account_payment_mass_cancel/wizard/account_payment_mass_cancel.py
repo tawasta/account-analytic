@@ -3,7 +3,8 @@ from odoo import _, api, exceptions, models
 
 class AccountPaymentMassCancel(models.TransientModel):
 
-    _name = 'account.payment.mass.cancel'
+    _name = "account.payment.mass.cancel"
+    _description = "Mass cancel payments"
 
     def get_cancellable_states(self):
         return ["posted", "sent", "reconciled"]
@@ -11,7 +12,8 @@ class AccountPaymentMassCancel(models.TransientModel):
     @api.multi
     def cancel_payments(self):
         payment_ids = self.env["account.payment"].browse(
-            self._context.get("active_ids"))
+            self._context.get("active_ids")
+        )
 
         allowed_states = self.get_cancellable_states()
 
