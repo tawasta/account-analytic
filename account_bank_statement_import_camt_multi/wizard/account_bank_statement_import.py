@@ -14,7 +14,8 @@ class AccountBankStatementImport(models.TransientModel):
     @api.multi
     def import_files(self):
         data_str = str(base64.b64decode(self.data_file), "utf-8")
-        statements = data_str.split('<?xml version="1.0" encoding="UTF-8"?>')
+        xml_def = '<?xml version="1.0" encoding="UTF-8"?>'
+        statements = data_str.split(xml_def)
         parser = etree.XMLParser(recover=True, remove_comments=True)
 
         for statement in statements:
@@ -32,10 +33,12 @@ class AccountBankStatementImport(models.TransientModel):
                 raise ValueError("Not a valid xml file, or not an xml file at all.")
 
             _logger.debug("Try parsing with camt.")
+
+            # Re-add xml definition
             statement_str = etree.tostring(root)
 
             self.data_file = base64.b64encode(statement_str)
-            res = self.import_file()
+            self.import_file()
 
         action = self.env.ref("account.action_bank_statement_tree").read()[0]
 
