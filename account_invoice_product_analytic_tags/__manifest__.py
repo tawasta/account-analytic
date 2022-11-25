@@ -19,25 +19,23 @@
 ##############################################################################
 
 {
-    'name': 'Product analytic tags on invoice lines',
-    'summary': 'Adds invoice line analytic tags from products',
-    'version': '14.0.1.0.0',
-    'category': 'Invoicing',
-    'website': 'http://www.tawasta.fi',
-    'author': 'Tawasta',
-    'license': 'AGPL-3',
-    'application': False,
-    'installable': True,
-    'external_dependencies': {
-        'python': [],
-        'bin': [],
+    "name": "Product analytic tags on invoice lines",
+    "summary": "Adds invoice line analytic tags from products",
+    "version": "14.0.1.0.0",
+    "category": "Invoicing",
+    "website": "https://gitlab.com/tawasta/odoo/account-analytic",
+    "author": "Tawasta",
+    "license": "AGPL-3",
+    "application": False,
+    "installable": True,
+    "external_dependencies": {
+        "python": [],
+        "bin": [],
     },
-    'depends': [
-        'account',
-        'product_analytic_tags',
+    "depends": [
+        "account",
+        "product_analytic_tags",
     ],
-    'data': [
-    ],
-    'demo': [
-    ],
+    "data": [],
+    "demo": [],
 }
