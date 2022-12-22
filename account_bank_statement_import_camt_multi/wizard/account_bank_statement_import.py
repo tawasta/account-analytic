@@ -34,11 +34,23 @@ class AccountBankStatementImport(models.TransientModel):
 
             _logger.debug("Try parsing with camt.")
 
-            # Re-add xml definition
-            statement_str = etree.tostring(root)
+            # Collect Ntfctn instances to a list
+            notifications = [etree.tostring(x) for x in root[0].findall(".//{*}Ntfctn")]
 
-            self.data_file = base64.b64encode(statement_str)
-            self.import_file()
+            # Remove all Ntfctn instances
+            for n in root[0].findall(".//{*}Ntfctn"):
+                n.getparent().remove(n)
+
+            statement_str = etree.tostring(root, encoding = "unicode")
+            # Re-add xml definition
+            statement_str = "{}{}".format(xml_def, statement_str)
+
+            # Import all statements as they were standalone files
+            for notification in notifications:
+                data_file = statement_str.replace("</GrpHdr>", "</GrpHdr>{}".format(str(notification)))
+                self.data_file = base64.b64encode(data_file.encode(encoding = 'UTF-8'))
+                self.import_file()
+
 
         action = self.env.ref("account.action_bank_statement_tree").read()[0]
 
