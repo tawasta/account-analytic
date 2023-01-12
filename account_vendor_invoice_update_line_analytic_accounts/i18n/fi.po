@@ -4,31 +4,35 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 12.0\n"
+"Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-25 06:59+0000\n"
-"PO-Revision-Date: 2020-05-25 10:00+0300\n"
-"Last-Translator: <>\n"
+"POT-Creation-Date: 2023-01-12 12:33+0000\n"
+"PO-Revision-Date: 2023-01-12 14:33+0200\n"
+"Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: fi_FI\n"
+"Plural-Forms: \n"
+"Language: fi\n"
 "X-Generator: Poedit 2.0.6\n"
 
 #. module: account_vendor_invoice_update_line_analytic_accounts
-#: model:ir.model.fields,field_description:account_vendor_invoice_update_line_analytic_accounts.field_account_invoice__analytic_account_id
-msgid "Default Analytic Account"
-msgstr "Oletuskustannuspaikka"
+#: model:ir.model.fields,field_description:account_vendor_invoice_update_line_analytic_accounts.field_account_move__display_name
+msgid "Display Name"
+msgstr "Näyttönimi"
 
 #. module: account_vendor_invoice_update_line_analytic_accounts
-#: code:addons/account_vendor_invoice_update_line_analytic_accounts/models/account_invoice.py:14
-#: model:ir.model.fields,help:account_vendor_invoice_update_line_analytic_accounts.field_account_invoice__analytic_account_id
-#, python-format
-msgid "Informational analytic account related to the invoice"
-msgstr "Laskua koskeva kustannuspaikka"
+#: model:ir.model.fields,field_description:account_vendor_invoice_update_line_analytic_accounts.field_account_move__id
+msgid "ID"
+msgstr "Tunniste (ID)"
 
 #. module: account_vendor_invoice_update_line_analytic_accounts
-#: model:ir.model,name:account_vendor_invoice_update_line_analytic_accounts.model_account_invoice
-msgid "Invoice"
-msgstr "Lasku"
+#: model:ir.model,name:account_vendor_invoice_update_line_analytic_accounts.model_account_move
+msgid "Journal Entry"
+msgstr "Päiväkirjan kirjaus"
+
+#. module: account_vendor_invoice_update_line_analytic_accounts
+#: model:ir.model.fields,field_description:account_vendor_invoice_update_line_analytic_accounts.field_account_move____last_update
+msgid "Last Modified on"
+msgstr "Viimeksi muokattu"
