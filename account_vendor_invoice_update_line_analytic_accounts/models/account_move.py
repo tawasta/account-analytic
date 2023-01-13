@@ -10,7 +10,7 @@ class AccountMove(models.Model):
         self.ensure_one()
         if self.analytic_account_id:
             for line in self.invoice_line_ids:
-                line.account_analytic_id = self.analytic_account_id.id
+                line.analytic_account_id = self.analytic_account_id.id
 
     @api.onchange("analytic_account_id")
     def set_analytic_tags(self):
