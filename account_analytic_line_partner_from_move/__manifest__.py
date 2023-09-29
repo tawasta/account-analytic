@@ -23,7 +23,7 @@
     "summary": "Show the related account move's partner for analytic lines",
     "version": "14.0.1.0.0",
     "category": "Accounting & Finance",
-    "website": "https://github.com/Tawasta/account-analytic",
+    "website": "https://gitlab.com/tawasta/odoo/account-analytic",
     "author": "Tawasta",
     "license": "AGPL-3",
     "application": False,

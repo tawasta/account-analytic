@@ -21,7 +21,7 @@
 {
     "name": "Supplier invoice line analytic tag update",
     "summary": "Mass update all lines' analytic tags of a single invoice",
-    "version": "14.0.1.0.0",
+    "version": "14.0.1.0.1",
     "category": "Invoicing",
     "website": "https://gitlab.com/tawasta/odoo/account-analytic",
     "author": "Tawasta",
