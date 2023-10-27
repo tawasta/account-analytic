@@ -1,7 +1,7 @@
 ##############################################################################
 #
 #    Author: Oy Tawasta OS Technologies Ltd.
-#    Copyright 2020 Oy Tawasta OS Technologies Ltd. (https://tawasta.fi)
+#    Copyright 2023 Oy Tawasta OS Technologies Ltd. (https://tawasta.fi)
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as
@@ -19,22 +19,17 @@
 ##############################################################################
 
 {
-    "name": "Invoice analytic account",
-    "summary": "Add analytic account to invoices",
-    "version": "14.0.1.0.1",
-    "category": "Invoicing",
+    "name": "Show color of tags on invoice lines of Invoice form view",
+    "summary": "Show color of tags on invoice lines of Invoice form view",
+    "version": "14.0.1.0.0",
+    "category": "Accounting",
     "website": "https://gitlab.com/tawasta/odoo/account-analytic",
     "author": "Tawasta",
     "license": "AGPL-3",
     "application": False,
     "installable": True,
-    "external_dependencies": {
-        "python": [],
-        "bin": [],
-    },
     "depends": [
         "account",
-        "analytic",
     ],
     "data": [
         "views/account_move.xml",

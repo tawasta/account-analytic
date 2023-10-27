@@ -1,7 +1,7 @@
 ##############################################################################
 #
 #    Author: Oy Tawasta OS Technologies Ltd.
-#    Copyright 2020 Oy Tawasta OS Technologies Ltd. (https://tawasta.fi)
+#    Copyright 2018 Oy Tawasta OS Technologies Ltd. (https://tawasta.fi)
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as
@@ -19,8 +19,8 @@
 ##############################################################################
 
 {
-    "name": "Invoice analytic account",
-    "summary": "Add analytic account to invoices",
+    "name": "Supplier invoice line analytic tag update",
+    "summary": "Mass update all lines' analytic tags of a single invoice",
     "version": "14.0.1.0.1",
     "category": "Invoicing",
     "website": "https://gitlab.com/tawasta/odoo/account-analytic",
@@ -28,15 +28,8 @@
     "license": "AGPL-3",
     "application": False,
     "installable": True,
-    "external_dependencies": {
-        "python": [],
-        "bin": [],
-    },
-    "depends": [
-        "account",
-        "analytic",
-    ],
-    "data": [
-        "views/account_move.xml",
-    ],
+    "external_dependencies": {"python": [], "bin": []},
+    "depends": ["account"],
+    "data": ["views/account_invoice.xml"],
+    "demo": [],
 }
