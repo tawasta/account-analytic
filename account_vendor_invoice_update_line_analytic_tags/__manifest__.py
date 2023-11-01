@@ -21,7 +21,7 @@
 {
     "name": "Supplier invoice line analytic tag update",
     "summary": "Mass update all lines' analytic tags of a single invoice",
-    "version": "14.0.1.0.1",
+    "version": "14.0.1.0.2",
     "category": "Invoicing",
     "website": "https://gitlab.com/tawasta/odoo/account-analytic",
     "author": "Tawasta",
@@ -29,7 +29,9 @@
     "application": False,
     "installable": True,
     "external_dependencies": {"python": [], "bin": []},
-    "depends": ["account"],
+    "depends": [
+        "account_invoice_analytic_account",
+    ],
     "data": ["views/account_invoice.xml"],
     "demo": [],
 }
