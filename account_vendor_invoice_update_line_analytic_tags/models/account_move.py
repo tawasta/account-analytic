@@ -13,9 +13,9 @@ class AccountMove(models.Model):
         help="Informational list of analytic tags related to the invoice",
     )
 
-    @api.onchange("analytic_tag_ids")
+    @api.onchange("analytic_tag_ids", "analytic_account_id")
     def set_line_analytic_tags(self):
         self.ensure_one()
         if self.analytic_tag_ids:
             for line in self.invoice_line_ids:
-                line.analytic_tag_ids = [(6, 0, self.analytic_tag_ids.mapped("id"))]
+                line.analytic_tag_ids = [(6, 0, self.analytic_tag_ids.ids)]
