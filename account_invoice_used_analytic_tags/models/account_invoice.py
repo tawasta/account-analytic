@@ -15,7 +15,7 @@ class AccountMove(models.Model):
     row_analytic_tag_ids = fields.Many2many(
         compute="_compute_row_analytic_tag_ids",
         comodel_name="account.analytic.tag",
-        relation="invoice_row_analytic_tag_rel",
+        relation="move_row_analytic_tag_rel",
         column1="invoice_id",
         column2="analytic_tag_id",
         string="Lines' analytic tags",
