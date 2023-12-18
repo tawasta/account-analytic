@@ -5,7 +5,7 @@ class AccountMove(models.Model):
 
     _inherit = "account.move"
 
-    @api.depends("invoice_line_ids")
+    @api.depends("invoice_line_ids", "invoice_line_ids.analytic_tag_ids")
     def _compute_row_analytic_tag_ids(self):
         for invoice in self:
             invoice.row_analytic_tag_ids = invoice.invoice_line_ids.mapped(
