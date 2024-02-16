@@ -21,13 +21,13 @@
 {
     "name": "Lines' analytic accounts for invoices",
     "summary": "Enables filtering invoices based on lines' analytic accounts",
-    "version": "14.0.1.0.1",
+    "version": "14.0.1.0.2",
     "category": "Invoicing",
     "website": "https://gitlab.com/tawasta/odoo/account-analytic",
     "author": "Tawasta",
     "license": "AGPL-3",
     "application": False,
     "installable": True,
-    "depends": ["account"],
+    "depends": ["account", "account_invoice_analytic_account"],
     "data": [],
 }
