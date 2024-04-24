@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<odoo>
+    <record id="account_statement_import_form" model="ir.ui.view">
+        <field name="name">account.statement.import form multi</field>
+        <field name="model">account.statement.import</field>
+        <field
+      name="inherit_id"
+      ref="account_statement_import.account_statement_import_form"
+    />
+        <field name="priority" eval="99" />
+        <field name="arch" type="xml">
+            <xpath
+        expr="//button[@name='import_file_button']"
+        position="replace"
+      >
+                <button
+          name="import_files_button"
+          string="Import and View"
+          type="object"
+          class="btn-primary"
+        />
+            </xpath>
+        </field>
+    </record>
+</odoo>
