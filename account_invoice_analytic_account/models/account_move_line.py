@@ -10,7 +10,11 @@ class AccountMoveLine(models.Model):
         res = super()._compute_analytic_account_id
         for record in self:
             # Set default analytic account value for new lines
-            if not record.analytic_account_id and record.move_id.analytic_account_id:
+            if (
+                not record.exclude_from_invoice_tab
+                and not record.analytic_account_id
+                and record.move_id.analytic_account_id
+            ):
                 record.analytic_account_id = record.move_id.analytic_account_id
 
         return res
