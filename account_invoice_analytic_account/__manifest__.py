@@ -21,7 +21,7 @@
 {
     "name": "Invoice analytic account",
     "summary": "Add analytic account to invoices",
-    "version": "14.0.1.0.1",
+    "version": "14.0.1.0.2",
     "category": "Invoicing",
     "website": "https://gitlab.com/tawasta/odoo/account-analytic",
     "author": "Tawasta",
