@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="view_account_analytic_account_form" model="ir.ui.view">
+        <field name="name">account.analytic.account.form.budget</field>
+        <field name="model">account.analytic.account</field>
+        <field
+      name="inherit_id"
+      ref="analytic.view_account_analytic_account_form"
+    />
+        <field name="arch" type="xml">
+            <group name="main" position="after">
+                <group name="budget" string="Approved Budget">
+                    <group>
+                        <field name="materials_budget" widget="monetary" />
+                        <field name="subcontract_budget" widget="monetary" />
+                        <label for="hours_budget" string="Hours" />
+                        <div>
+                            <field
+                name="hours_budget"
+                widget="float_time"
+                class="oe_inline"
+              /> hours
+                        </div>
+                    </group>
+                </group>
+            </group>
+        </field>
+    </record>
+</odoo>
