@@ -5,4 +5,4 @@ class AccountAnalyticAccount(models.Model):
 
     _inherit = "account.analytic.account"
 
-    responsible_id = fields.Many2one("res.user", string="Responsible", copy=False)
+    responsible_id = fields.Many2one("res.users", string="Responsible", copy=False)
