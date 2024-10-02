@@ -19,9 +19,9 @@
 ##############################################################################
 
 {
-    "name": "Account Analytic – Responsible",
-    "summary": "Assign a responsible user for an analytic account",
-    "version": "17.0.1.0.1",
+    "name": "Analytic Account – Check if a given name exists",
+    "summary": "Prevent saving if analytic account name for a given name ",
+    "version": "17.0.1.0.0",
     "category": "Accounting",
     "website": "https://gitlab.com/tawasta/odoo/account-analytic",
     "author": "Tawasta",
@@ -31,7 +31,5 @@
     "depends": [
         "analytic",
     ],
-    "data": [
-        "views/analytic_account.xml",
-    ],
+    "data": [],
 }
