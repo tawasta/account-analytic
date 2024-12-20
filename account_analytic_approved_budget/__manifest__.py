@@ -21,7 +21,7 @@
 {
     "name": "Account Analytic – Approved budget",
     "summary": "Enable to specify an approved budget on analytic accounts",
-    "version": "17.0.1.0.0",
+    "version": "17.0.1.0.1",
     "category": "Accounting",
     "website": "https://gitlab.com/tawasta/odoo/account-analytic",
     "author": "Tawasta",
