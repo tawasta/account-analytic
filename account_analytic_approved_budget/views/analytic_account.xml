@@ -11,6 +11,7 @@
             <group name="main" position="after">
                 <group name="budget" string="Approved Budget">
                     <group>
+                        <field name="revenue_budget" widget="monetary" />
                         <field name="materials_budget" widget="monetary" />
                         <field name="subcontract_budget" widget="monetary" />
                         <label for="hours_budget" string="Hours" />
