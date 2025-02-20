@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<odoo>
-    <data noupdate="1">
-        <record id="allow_analytic_account_edit" model="res.groups">
-            <field name="name">Enable analytic account editing</field>
-        </record>
-    </data>
+<odoo noupdate="1">
+    <record id="allow_analytic_account_edit" model="res.groups">
+        <field name="name">Enable analytic account editing</field>
+    </record>
 </odoo>
