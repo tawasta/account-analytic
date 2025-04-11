@@ -1,7 +1,7 @@
 ##############################################################################
 #
-#    Author: Oy Tawasta OS Technologies Ltd.
-#    Copyright 2024 Oy Tawasta OS Technologies Ltd. (https://tawasta.fi)
+#    Author: Futural Oy
+#    Copyright 2024 Futural Oy (https://futural)
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as
@@ -23,8 +23,8 @@
     "summary": "Assign a responsible user for an analytic account",
     "version": "17.0.1.0.1",
     "category": "Accounting",
-    "website": "https://gitlab.com/tawasta/odoo/account-analytic",
-    "author": "Tawasta",
+    "website": "https://github.com/tawasta/account-analytic",
+    "author": "Futural",
     "license": "AGPL-3",
     "application": False,
     "installable": True,
