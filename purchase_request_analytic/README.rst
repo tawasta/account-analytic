@@ -32,8 +32,8 @@ This module adds the analytic account field to Purchase Requests.
 Usage
 =====
 
--  Assign an analytic account to the purchase request or to purchase
-   request lines.
+- Assign an analytic account to the purchase request or to purchase
+  request lines.
 
 Changelog
 =========
@@ -80,9 +80,9 @@ Authors
 Contributors
 ------------
 
--  Beñat Jimenez <benat.jimenez@forgeflow.com>
--  Pimolnat Suntian <pimolnats@ecosoft.co.th>
--  Juany Davila <juany.davila@forgeflow.com>
+- Beñat Jimenez <benat.jimenez@forgeflow.com>
+- Pimolnat Suntian <pimolnats@ecosoft.co.th>
+- Juany Davila <juany.davila@forgeflow.com>
 
 Maintainers
 -----------
