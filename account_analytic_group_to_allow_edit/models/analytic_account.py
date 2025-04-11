@@ -3,7 +3,6 @@ from odoo.exceptions import ValidationError
 
 
 class AccountAnalyticAccount(models.Model):
-
     _inherit = "account.analytic.account"
 
     def write(self, vals):
