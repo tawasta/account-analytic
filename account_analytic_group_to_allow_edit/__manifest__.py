@@ -21,7 +21,7 @@
 {
     "name": "Analytic Account – Allow editing only for one group",
     "summary": "Adds a group who only has the rights to edit analytic accounts",
-    "version": "17.0.1.0.0",
+    "version": "17.0.1.1.0",
     "category": "Accounting",
     "website": "https://gitlab.com/tawasta/odoo/account-analytic",
     "author": "Tawasta",
