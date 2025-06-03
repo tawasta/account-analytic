@@ -21,7 +21,7 @@ addon | version | maintainers | summary
 [account_analytic_group_to_allow_edit](account_analytic_group_to_allow_edit/) | 17.0.1.1.0 |  | Adds a group who only has the rights to edit analytic accounts
 [account_analytic_responsible](account_analytic_responsible/) | 17.0.1.0.1 |  | Assign a responsible user for an analytic account
 [account_analytic_unique_name](account_analytic_unique_name/) | 17.0.1.0.0 |  | Prevent saving if analytic account name for a given name
-[purchase_request_analytic](purchase_request_analytic/) | 17.0.1.0.0 |  | Purchase Request Analytic
+[purchase_request_analytic_account](purchase_request_analytic_account/) | 17.0.1.0.0 |  | Purchase Request Analytic
 
 [//]: # (end addons)
 
