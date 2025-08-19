@@ -1,12 +1,12 @@
 name: pre-commit
 
 on:
-  push:
-    branches:
-      - '**'
   pull_request:
     branches:
-      - '**'
+      - "17.0*"
+  push:
+    branches:
+      - "17.0"
 
 jobs:
   pre-commit:
