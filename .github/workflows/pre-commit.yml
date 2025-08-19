@@ -3,15 +3,15 @@ name: pre-commit
 on:
   push:
     branches:
-      - '**'       # run on all branches
+      - '**'
   pull_request:
     branches:
-      - '**'       # run on all PRs
+      - '**'
 
 jobs:
   pre-commit:
     uses: tawasta/github-workflows/.github/workflows/odoo-pre-commit.yml@main
     with:
-      python-version: '3.11'   # adjust if needed
+      python-version: '3.11'
     secrets:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
