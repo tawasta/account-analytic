@@ -10,7 +10,7 @@ on:
 
 jobs:
   pre-commit:
-    uses: tawasta/github-workflows/odoo-pre-commit.yml@main
+    uses: tawasta/github-workflows/.github/workflows/odoo-pre-commit.yml@main
     with:
       python-version: '3.11'
     secrets:
