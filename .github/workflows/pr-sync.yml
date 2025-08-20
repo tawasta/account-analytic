@@ -8,6 +8,6 @@ on:
 
 jobs:
   open-pr-to-dev:
-    uses: my-org/shared-workflows/.github/workflows/open-pr-to-dev.yml@main
+    uses: tawasta/shared-workflows/.github/workflows/open-pr-to-dev.yml@main
     with:
       target_branch: 17.0-dev
