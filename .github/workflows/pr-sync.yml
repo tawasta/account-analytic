@@ -1,13 +1,13 @@
-name: Open PR from feature branch to dev
+name: Open PR from prod to dev
 
 on:
-  pull_request:
+  push:
     branches:
       - 17.0
-    types: [opened, reopened, synchronize]
 
 jobs:
   open-pr-to-dev:
-    uses: my-org/shared-workflows/.github/workflows/open-pr-to-dev.yml@main
+    uses: tawasta/shared-workflows/.github/workflows/open-pr-to-dev.yml@main
     with:
+      source_branch: 17.0
       target_branch: 17.0-dev
