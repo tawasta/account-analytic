@@ -5,7 +5,7 @@
 
 # Analytic accounting
 
-Modules related to analytic accounting
+Modules related to analytic accounting.
 
 <!-- /!\ do not modify below this line -->
 
