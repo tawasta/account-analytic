@@ -1,6 +1,6 @@
 name: Open PR from prod to dev
 permissions:
-  contents: read
+  contents: write
   pull-requests: write
 
 on:
