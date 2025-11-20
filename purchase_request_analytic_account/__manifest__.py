@@ -4,7 +4,7 @@
 {
     "name": "Purchase Request Analytic",
     "version": "17.0.1.0.0",
-    "author": "ForgeFlow, Odoo Community Association (OCA), Tawasta",
+    "author": "ForgeFlow, Odoo Community Association (OCA), Futural",
     "category": "Purchase Management",
     "website": "https://github.com/tawasta/account-analytic",
     "depends": ["purchase_request"],

@@ -14,7 +14,7 @@ class AccountAnalyticAccount(models.Model):
             )
             if account_name_exists:
                 raise ValidationError(
-                    _("Analytic Account already exists with the name: {}".format(name))
+                    _(f"Analytic Account already exists with the name: {name}")
                 )
 
         return super().write(vals)
@@ -29,7 +29,7 @@ class AccountAnalyticAccount(models.Model):
             )
             if account_name_exists:
                 raise ValidationError(
-                    _("Analytic Account already exists with the name: {}".format(name))
+                    _(f"Analytic Account already exists with the name: {name}")
                 )
 
         return super().create(vals)

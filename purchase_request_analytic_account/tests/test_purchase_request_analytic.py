@@ -6,7 +6,7 @@ from odoo.tests.common import TransactionCase
 
 class TestPurchaseRequestAnalytic(TransactionCase):
     def setUp(self):
-        super(TestPurchaseRequestAnalytic, self).setUp()
+        super().setUp()
         self.anal_id = self.env["account.analytic.account"].create(
             {"name": "Account Analytic for Tests"}
         )
